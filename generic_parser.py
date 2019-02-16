@@ -49,4 +49,23 @@ print(data.head())
 
 print(data.shape)
 
+#  "organize" that file, so we can access columns *or* rows of it easily
+# 2a. access any row
+# 2b. access any column
+# 2c. access any value
+
+#all columns with specified rows
+print(data.iloc[3:5,:])
+
+
+print(data.iloc[:3,-3:])
+
+
+print(data.iloc[3,4])
+
+
+import numpy as np
+
+print(np.mean(data))
+print(np.std(data))
 
